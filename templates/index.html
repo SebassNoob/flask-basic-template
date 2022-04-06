@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <!--imports index.css-->
+  <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+
+</head>
+<body>
+
+  <h1>Hello World!</h1>
+  <h2>Hello World! but smaller</h2>
+  <h5>Hello World! but even smaller</h5>
+  <br>
+  <p>This is a paragraph. Say something insightful here.</p>
+  <p>maybe you want to <strong>bold</strong> your text, <u>underline it</u>, <i> make it italic </i> or <span style="color:yellow">change colour of text</span></p>
+  <p><center>center your text!</center></p>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Insert a link!</a>
+  <br>
+  <button id="button" type="button">I'm a button!</button>
+  <!--sets an the button to id of "button", and when clicked run function "click" -->
+  
+  <script>
+    //run javascript here!
+    //when button with id "button" is clicked, edit the inner html.
+    document.getElementById("button").onclick= function(){
+      document.getElementById("button").innerHTML = "I've been clicked!";
+    };
+  
+  </script>
+  
+  <!-- divider for a section of your webpage-->
+  <br>
+  <div>
+    <form method="post">
+      <!-- text input and dropdown select menu-->
+      <input name="field-1" placeholder="Give a text input!">
+      <select name="field-2">
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!--https://jinja.palletsprojects.com/en/3.1.x/ for docs-->
+  {% for i in range(3) %}
+  <p>a jinja2 for loop!</p>
+  {% endfor %}
+
+
+  
+</body>
+  

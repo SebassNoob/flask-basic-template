@@ -1,0 +1,11 @@
+
+/* turns the background black */
+body{
+  background-color: black;
+  
+}
+/* turns all text white */
+h,h1,h2,h3,h4,h5,h6,p,p1,p2,p3,p4,p5,p6{
+  color:white
+  
+}
